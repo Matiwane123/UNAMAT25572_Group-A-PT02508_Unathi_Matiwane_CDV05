@@ -1,15 +1,18 @@
 /* Global */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #4A90E2, #F5A623);
+  background: linear-gradient(135deg, #4a90e2, #f5a623);
   color: #fff;
   text-align: center;
   padding: 5rem 2rem;
@@ -41,22 +44,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #F5A623;
+  color: #f5a623;
 }
 
 /* Project Cards */
 .project-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   margin-bottom: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -67,7 +72,7 @@ nav ul li a:hover {
 /* Buttons */
 a {
   display: inline-block;
-  background: #4A90E2;
+  background: #4a90e2;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -76,9 +81,66 @@ a {
 }
 
 a:hover {
-  background: #F5A623;
+  background: #f5a623;
 }
 
+/* Skill language icons */
+.language-icons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  letter-spacing: 0.02em;
+}
+
+.skill-icon.html {
+  background: linear-gradient(135deg, #e34f26, #f06529);
+}
+
+.skill-icon.css {
+  background: linear-gradient(135deg, #264de4, #2965f1);
+}
+
+.skill-icon.js {
+  background: linear-gradient(135deg, #f7df1e, #e5c31d);
+  color: #333;
+}
+/* Badge Section */
+.badge-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.badge-section img {
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.badge-section img:hover {
+  transform: scale(1.1);
+}
+
+#skills h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
 /* Footer */
 footer {
   text-align: center;
